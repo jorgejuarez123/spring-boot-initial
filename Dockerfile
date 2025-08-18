@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/ubi9/openjdk-17:latest
 WORKDIR /app
 
 # Copiamos el archivo JAR generado por Maven/Gradle al contenedor
-COPY target/*.jar app.jar
+COPY target/spring-boot-initial-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponemos el puerto por defecto de Spring Boot
 EXPOSE 8080
